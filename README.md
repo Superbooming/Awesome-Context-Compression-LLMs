@@ -79,7 +79,8 @@ Context Compression Methods
 
 | Paper Title | Venue/Date | Tags | Code | TL;DR |
 | :--- | :--- | :--- | :--- | :--- |
-| [Coconut: Chain of Continuous Thought](https://arxiv.org/abs/2412.06769) | arXiv 2024.12 | `Latent Reasoning`, `CoT` | - | Performs reasoning in continuous latent space without outputting tokens |
+| [PCC: Pretraining Context Compressor for Large Language Models with Embedding-Based Memory](https://aclanthology.org/2025.acl-long.1394.pdf) | ACL 2025 Main | `Autoencoder`, `Memory Slots` | [Github](https://github.com/microsoft/AnthropomorphicIntelligence) | Explore the upper limit of implicit compression ratio and connect to downstream LLMs faster. |
+| [Coconut: Chain of Continuous Thought](https://arxiv.org/abs/2412.06769) | arXiv 2024.12 | `Latent Reasoning`, `CoT` | [Github](https://github.com/facebookresearch/coconut) | Performs reasoning in continuous latent space without outputting tokens |
 | [xRAG: Extreme Context Compression for Retrieval-Augmented Generation](https://arxiv.org/abs/2405.13792) | arXiv 2024.05 | `RAG`, `Compression` | - | Compresses retrieved documents into dense representations |
 | [PEARL: Prompting Large Language Models to Plan and Execute Actions Over Long Documents](https://arxiv.org/abs/2305.14564) | ACL 2024 | `Planning`, `Long Doc` | [GitHub](https://github.com/SimengSun/pearl) | Decomposes long document QA into planning and execution |
 | [In-context Autoencoder for Context Compression in a Large Language Model](https://arxiv.org/abs/2307.06945) | ICLR 2024 | `Autoencoder`, `Memory Slots` | [GitHub](https://github.com/getao/ICAE) | ICAE compresses 512 tokens into 128 memory slots for 4x compression |
