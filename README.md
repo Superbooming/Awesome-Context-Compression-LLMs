@@ -67,7 +67,6 @@ Context Compression Methods
 | [LLMLingua: Compressing Prompts for Accelerated Inference of Large Language Models](https://arxiv.org/abs/2310.05736) | EMNLP 2023 | `Pruning` | [GitHub](https://github.com/microsoft/LLMLingua) | Uses a small LM to calculate perplexity and prune less informative tokens, achieving up to 20x compression |
 | [Selective-Context: Compressing Contexts for Efficient Inference](https://arxiv.org/abs/2310.06201) | EMNLP 2023 | `Pruning`, `Self-Information` | [GitHub](https://github.com/liyucheng09/Selective_Context) | Filters out low self-information content using a small LM |
 | [Adapting Language Models to Compress Contexts](https://arxiv.org/abs/2305.14788) | EMNLP 2023 | `Summarization` | [GitHub](https://github.com/princeton-nlp/AutoCompressors) | AutoCompressor: recursively compresses segments into summary vectors |
-| [Learning to Compress Prompts with Gist Tokens](https://arxiv.org/abs/2304.08467) | NeurIPS 2023 | `Soft Prompt`, `Gist` | [GitHub](https://github.com/jayelm/gisting) | Trains "gist tokens" that compress task instructions into 1-10 virtual tokens |
 
 ---
 
@@ -75,7 +74,7 @@ Context Compression Methods
 
 **Definition**: Methods that compress context into **soft vectors, embeddings, or latent states**. This includes encoding long text into compact vector representations and **Latent Reasoning** where the "Chain of Thought" or intermediate reasoning steps are performed in the latent space (not outputting tokens) to reduce generation overhead.
 
-**Keywords**: `Soft Prompt`, `Gist Tokens`, `Autoencoder`, `Memory Vectors`, `Latent Space Reasoning`, `Continuous Chain of Thought`, `Internal State Compression`
+**Keywords**: `Soft Prompt`, `Autoencoder`, `Memory Vectors`, `Latent Space Reasoning`, `Continuous Chain of Thought`, `Internal State Compression`
 
 | Paper Title | Venue/Date | Tags | Code | TL;DR |
 | :--- | :--- | :--- | :--- | :--- |
@@ -86,7 +85,7 @@ Context Compression Methods
 | [In-context Autoencoder for Context Compression in a Large Language Model](https://arxiv.org/abs/2307.06945) | ICLR 2024 | `Autoencoder`, `Memory Slots` | [GitHub](https://github.com/getao/ICAE) | ICAE compresses 512 tokens into 128 memory slots for 4x compression |
 | [Scaling Latent Reasoning via Thinking Tokens](https://arxiv.org/abs/2311.04254) | arXiv 2023.11 | `Latent Reasoning`, `Pause Token` | - | Uses "thinking tokens" for implicit reasoning steps |
 | [Focused Transformer: Contrastive Training for Context Scaling](https://arxiv.org/abs/2307.03170) | NeurIPS 2023 | `Contrastive`, `Long-Context` | [GitHub](https://github.com/CStanKonrad/long_llama) | LongLLaMA: uses contrastive learning to focus on relevant context |
-| [Learning to Compress Prompts with Gist Tokens](https://arxiv.org/abs/2304.08467) | NeurIPS 2023 | `Gist`, `Instruction` | [GitHub](https://github.com/jayelm/gisting) | Compresses instructions into learnable gist tokens |
+| [Learning to Compress Prompts with Gist Tokens](https://arxiv.org/abs/2304.08467) | NeurIPS 2023 | `Soft Prompt` | [GitHub](https://github.com/jayelm/gisting) | Compresses instructions into learnable gist tokens |
 | [Adapting Language Models to Compress Contexts](https://arxiv.org/abs/2305.14788) | EMNLP 2023 | `Recursive`, `Soft Prompt` | [GitHub](https://github.com/princeton-nlp/AutoCompressors) | AutoCompressor: recursively compresses long documents into summary vectors |
 | [Parallel Context Windows for Large Language Models](https://arxiv.org/abs/2212.10947) | ACL 2023 | `Parallel`, `Memory` | - | PCW: processes context in parallel windows and aggregates |
 | [Training Language Models with Memory Augmentation](https://arxiv.org/abs/2205.12674) | EMNLP 2022 | `Memory`, `TRIME` | [GitHub](https://github.com/princeton-nlp/TRIME) | TRIME: retrieves and integrates memory tokens during training |

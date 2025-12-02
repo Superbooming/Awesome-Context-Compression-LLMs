@@ -67,7 +67,6 @@
 | [LLMLingua: Compressing Prompts for Accelerated Inference of Large Language Models](https://arxiv.org/abs/2310.05736) | EMNLP 2023 | `剪枝` | [GitHub](https://github.com/microsoft/LLMLingua) | 使用小型LM计算困惑度并剪枝信息量少的Token，实现高达20倍压缩 |
 | [Selective-Context: Compressing Contexts for Efficient Inference](https://arxiv.org/abs/2310.06201) | EMNLP 2023 | `剪枝`, `自信息` | [GitHub](https://github.com/liyucheng09/Selective_Context) | 使用小型LM过滤低自信息内容 |
 | [Adapting Language Models to Compress Contexts](https://arxiv.org/abs/2305.14788) | EMNLP 2023 | `摘要` | [GitHub](https://github.com/princeton-nlp/AutoCompressors) | AutoCompressor：递归将片段压缩为摘要向量 |
-| [Learning to Compress Prompts with Gist Tokens](https://arxiv.org/abs/2304.08467) | NeurIPS 2023 | `软提示`, `Gist` | [GitHub](https://github.com/jayelm/gisting) | 训练"gist tokens"将任务指令压缩为1-10个虚拟Token |
 
 ---
 
@@ -75,7 +74,7 @@
 
 **定义**：将上下文压缩为**软向量、嵌入或潜在状态**的方法。这包括将长文本编码为紧凑的向量表示，以及**潜在推理**——"思维链"或中间推理步骤在潜在空间中执行（不输出Token）以减少生成开销。
 
-**关键词**：`软提示`、`Gist Tokens`、`自编码器`、`记忆向量`、`潜在空间推理`、`连续思维链`、`内部状态压缩`
+**关键词**：`软提示`、`自编码器`、`记忆向量`、`潜在空间推理`、`连续思维链`、`内部状态压缩`
 
 | 论文标题 | 发表/日期 | 标签 | 代码 | 简述 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -85,7 +84,7 @@
 | [In-context Autoencoder for Context Compression in a Large Language Model](https://arxiv.org/abs/2307.06945) | ICLR 2024 | `自编码器`, `记忆槽` | [GitHub](https://github.com/getao/ICAE) | ICAE将512个Token压缩为128个记忆槽，实现4倍压缩 |
 | [Scaling Latent Reasoning via Thinking Tokens](https://arxiv.org/abs/2311.04254) | arXiv 2023.11 | `潜在推理`, `暂停Token` | - | 使用"思考Token"进行隐式推理步骤 |
 | [Focused Transformer: Contrastive Training for Context Scaling](https://arxiv.org/abs/2307.03170) | NeurIPS 2023 | `对比学习`, `长上下文` | [GitHub](https://github.com/CStanKonrad/long_llama) | LongLLaMA：使用对比学习聚焦相关上下文 |
-| [Learning to Compress Prompts with Gist Tokens](https://arxiv.org/abs/2304.08467) | NeurIPS 2023 | `Gist`, `指令` | [GitHub](https://github.com/jayelm/gisting) | 将指令压缩为可学习的gist tokens |
+| [Learning to Compress Prompts with Gist Tokens](https://arxiv.org/abs/2304.08467) | NeurIPS 2023 | `软提示` | [GitHub](https://github.com/jayelm/gisting) | 将指令压缩为可学习的gist tokens |
 | [Adapting Language Models to Compress Contexts](https://arxiv.org/abs/2305.14788) | EMNLP 2023 | `递归`, `软提示` | [GitHub](https://github.com/princeton-nlp/AutoCompressors) | AutoCompressor：递归将长文档压缩为摘要向量 |
 | [Parallel Context Windows for Large Language Models](https://arxiv.org/abs/2212.10947) | ACL 2023 | `并行`, `记忆` | - | PCW：在并行窗口中处理上下文并聚合 |
 | [Training Language Models with Memory Augmentation](https://arxiv.org/abs/2205.12674) | EMNLP 2022 | `记忆`, `TRIME` | [GitHub](https://github.com/princeton-nlp/TRIME) | TRIME：在训练期间检索和整合记忆Token |
