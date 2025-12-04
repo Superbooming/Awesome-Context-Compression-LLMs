@@ -65,7 +65,6 @@ Context Compression Methods
 | [Walking Down the Memory Maze: Beyond Context Limit through Interactive Reading](https://arxiv.org/abs/2310.05029) | NAACL 2024 | `Summarization` | - | MemWalker: iteratively summarizes and navigates long documents |
 | [LLMLingua: Compressing Prompts for Accelerated Inference of Large Language Models](https://arxiv.org/abs/2310.05736) | EMNLP 2023 | `Pruning` | [GitHub](https://github.com/microsoft/LLMLingua) | Uses a small LM to calculate perplexity and prune less informative tokens, achieving up to 20x compression |
 | [Selective-Context: Compressing Contexts for Efficient Inference](https://arxiv.org/abs/2310.06201) | EMNLP 2023 | `Pruning`, `Self-Information` | [GitHub](https://github.com/liyucheng09/Selective_Context) | Filters out low self-information content using a small LM |
-| [Adapting Language Models to Compress Contexts](https://arxiv.org/abs/2305.14788) | EMNLP 2023 | `Summarization` | [GitHub](https://github.com/princeton-nlp/AutoCompressors) | AutoCompressor: recursively compresses segments into summary vectors |
 
 ---
 
@@ -83,7 +82,8 @@ Context Compression Methods
 | [Coconut: Chain of Continuous Thought](https://arxiv.org/abs/2412.06769) | arXiv 2024.12 | `Latent Reasoning`, `CoT` | [Github](https://github.com/facebookresearch/coconut) | Performs reasoning in continuous latent space without outputting tokens |
 | [xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token](https://arxiv.org/abs/2405.13792) | NeurIPS 2024 | `RAG`, `Compression` | [Github](https://github.com/Hannibal046/xRAG) | Compresses retrieved documents into dense representations |
 | [PEARL: Prompting Large Language Models to Plan and Execute Actions Over Long Documents](https://arxiv.org/abs/2305.14564) | ACL 2024 | `Planning`, `Long Doc` | [GitHub](https://github.com/SimengSun/pearl) | Decomposes long document QA into planning and execution |
-| [In-context Autoencoder for Context Compression in a Large Language Model](https://arxiv.org/abs/2307.06945) | ICLR 2024 | `Autoencoder`, `Memory Slots` | [GitHub](https://github.com/getao/ICAE) | ICAE compresses 512 tokens into 128 memory slots for 4x compression |
+| [ICAE: In-context Autoencoder for Context Compression in a Large Language Model](https://arxiv.org/abs/2307.06945) | ICLR 2024 | `Autoencoder`, `Memory Slots` | [GitHub](https://github.com/getao/ICAE) | ICAE compresses 512 tokens into 128 memory slots for 4x compression |
+| [AutoCompressor: Adapting Language Models to Compress Contexts](https://arxiv.org/abs/2305.14788) | EMNLP 2023 | `Soft Prompt` | [GitHub](https://github.com/princeton-nlp/AutoCompressors) | AutoCompressor: recursively compresses segments into summary vectors |
 | [Scaling Latent Reasoning via Thinking Tokens](https://arxiv.org/abs/2311.04254) | arXiv 2023.11 | `Latent Reasoning`, `Pause Token` | - | Uses "thinking tokens" for implicit reasoning steps |
 | [Focused Transformer: Contrastive Training for Context Scaling](https://arxiv.org/abs/2307.03170) | NeurIPS 2023 | `Contrastive`, `Long-Context` | [GitHub](https://github.com/CStanKonrad/long_llama) | LongLLaMA: uses contrastive learning to focus on relevant context |
 | [Learning to Compress Prompts with Gist Tokens](https://arxiv.org/abs/2304.08467) | NeurIPS 2023 | `Soft Prompt` | [GitHub](https://github.com/jayelm/gisting) | Compresses instructions into learnable gist tokens |
