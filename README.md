@@ -75,7 +75,7 @@ Context Compression Methods
 
 | Paper Title | Venue/Date | Tags | Code | TL;DR |
 | :--- | :--- | :--- | :--- | :--- |
-| [CLaRa: Bridging Retrieval and Generation with Continuous Latent Reasoning](https://arxiv.org/pdf/2511.18659) | - | `Memory Slots`, `RAG` | [Github](https://github.com/facebookresearch/refrag) | Reduces TTFT delay of RAG system by 30 times. |
+| [CLaRa: Bridging Retrieval and Generation with Continuous Latent Reasoning](https://arxiv.org/pdf/2511.18659) | - | `Memory Slots`, `RAG` | [Github](https://github.com/apple/ml-clara) | CLaRa achieves significant compression rates (32x-64x) while preserving essential information for accurate answer generation. |
 | [REFRAG: Rethinking RAG based Decoding](https://arxiv.org/abs/2509.01092) | - | `Autoencoder`, `Memory Slots`, `RAG` | [Github](https://github.com/facebookresearch/refrag) | Reduces TTFT delay of RAG system by 30 times. |
 | [PCC: Pretraining Context Compressor for Large Language Models with Embedding-Based Memory](https://aclanthology.org/2025.acl-long.1394.pdf) | ACL 2025 Main | `Autoencoder`, `Memory Slots` | [Github](https://github.com/microsoft/AnthropomorphicIntelligence) | Explore the upper limit of implicit compression ratio and connect to downstream LLMs faster. |
 | [500xCompressor: Generalized Prompt Compression for Large Language Models](https://arxiv.org/abs/2408.03094) | ACL 2025 Main | `Autoencoder`, `Memory Slots` | [Github](https://github.com/ZongqianLi/500xCompressor) | Compresss a maximum of 500 natural language tokens into only 1 special token. |
